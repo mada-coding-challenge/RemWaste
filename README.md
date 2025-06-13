@@ -8,7 +8,7 @@ This project is a responsive React-based frontend that allows users to select a 
 
 ---
 
-## ✨ Features<br> <br>
+## ✨ Features 
 
 - Fetches skip size data from a remote API
 - Responsive grid layout using Tailwind CSS + DaisyUI
@@ -19,7 +19,7 @@ This project is a responsive React-based frontend that allows users to select a 
 - Background pattern using CSS variables
 - Photoshop used for image design (if any assets are included)
 
-## 🧰 Technologies Used <br>
+## 🧰 Technologies Used 
 
 
 | Left-aligned | Center-aligned | Right-aligned |
@@ -40,7 +40,7 @@ This project is a responsive React-based frontend that allows users to select a 
 
 
 ## 📦 Project Structure
-<br> <br>
+ 
 src/
 ├── App.jsx # Main application component
 ├── components/
@@ -49,35 +49,35 @@ src/
 │ ├── BottomNavbar.jsx # Bottom nav bar with back/next
 │ └── Button.jsx # Animated circular button
 ├── index.css # Tailwind + DaisyUI + background styling
-<br> <br>
+ 
 ---
-<br> <br>
+ 
 ## 🚀 Getting Started
-<br> <br>
+ 
 ### ✅ Prerequisites
-<br> <br>
+ 
 Make sure you have these installed:
-<br> <br>
-- [Node.js](https://nodejs.org/) (v16 or higher) <br> 
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)<br> 
-<br> <br>
+ 
+- [Node.js](https://nodejs.org/) (v16 or higher)  
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) 
+ 
 ---
-<br> <br>
-### 📥 Installation<br> <br>
+ 
+### 📥 Installation 
 
 1. **Clone the repository:**
-<br> <br>
+ 
 ```bash
-git clone https://github.com/your-username/your-repo.git <br>
-cd your-repo <br>
+git clone https://github.com/your-username/your-repo.git 
+cd your-repo 
 
-npm install <br>
+npm install 
 
-npm run dev <br>
+npm run dev 
 
-npm install -D tailwindcss postcss autoprefixer <br>
-npm install daisyui <br>
-<code>
+npm install -D tailwindcss postcss autoprefixer 
+npm install daisyui 
+
 
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -86,32 +86,33 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 }
-</code>
 
-npm install framer-motion <br>
-npm install axios <br>
-<br><br>
+
+npm install framer-motion 
+npm install axios 
+```
+
 # 📝 Notes
-<br><br>
+
 This project is a frontend React application that consumes skip data from a live external API. Below are important notes regarding API usage, limitations, and project scope.
-<br>
+
 ---
-<br>
+
 ## 🔗 API Endpoint
-<br>
+
 The application fetches data from the following endpoint:
-<br>
+
 https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
-<br><br>
+
 ---
-<br><br>
+
 ## 🧪 Sandbox Link
-<br><br>
-You can test and explore the project live in your browser using the sandbox link below. This is useful for quickly previewing the UI without needing to set up a local environment. <br>
-🔗[👉 View on StackblitZ]([https://codesandbox.io/your-sandbox-link-here](https://stackblitz.com/edit/vitejs-vite-xydn2zka?file=src%2FApp.jsx,src%2Fcomponents%2FCard.jsx,src%2Fcomponents%2FButton.jsx,src%2Fcomponents%2FSkeletonCard.jsx,src%2Fcomponents%2FBottomNavbar.jsx,src%2Findex.css,src%2FApp.css)<br>
-<br>
+
+You can test and explore the project live in your browser using the sandbox link below. This is useful for quickly previewing the UI without needing to set up a local environment.
+🔗[👉 View on StackblitZ]([https://codesandbox.io/your-sandbox-link-here](https://stackblitz.com/edit/vitejs-vite-xydn2zka?file=src%2FApp.jsx,src%2Fcomponents%2FCard.jsx,src%2Fcomponents%2FButton.jsx,src%2Fcomponents%2FSkeletonCard.jsx,src%2Fcomponents%2FBottomNavbar.jsx,src%2Findex.css,src%2FApp.css])
+
 
 ### 🚀 Live Preview
-<br><br>
+
  
-🔗[👉 View on Netlify]([https://enchanting-choux-7bb944.netlify.app/])))
+🔗[👉 View on Netlify]([https://enchanting-choux-7bb944.netlify.app/])
