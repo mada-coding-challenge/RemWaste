@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 const images = [bin_g, bin_y];
 export default function Card({ skip, isSelected, onSelect }) {
     const [isHovered, setIsHovered] = useState(false);
-  const cardClasses = `card w-[300px] cursor-pointer transition m-auto
-    ${isSelected ? "  hover:shadow-sm shadow-lg" : "hover:shadow"} `;
+  const cardClasses = `card w-[300px] cursor-pointer transition m-auto hover:outline outline-[#d9d9d9] pt-[25px]
+    ${isSelected ? "   outline outline-offset-2 outline-[#d9d9d9]" : "hover:shadow"} `;
 
   return (
     
@@ -22,7 +22,7 @@ export default function Card({ skip, isSelected, onSelect }) {
     
         <figure>
           {/* <div className="flex flex-col items-center justify-center "> */}
-          <div className="relative w-[300px] h-[200px] ">
+          <div className="relative w-[280px] h-[130px] ">
             {/* Background image (first image) */}
             <img
               src={images[0]}
@@ -50,7 +50,7 @@ export default function Card({ skip, isSelected, onSelect }) {
               className="absolute w-full h-full "
               // Click event to toggle the permanent state
             />
-            <div className="absolute inset-0 flex items-top justify-center text-[2.5rem] font-bold mb-2 pt-[23px]">
+            <div className="absolute inset-0 flex items-top justify-center text-[2rem] font-bold mb-2 pt-[8px]">
               {skip.size}YD³
             </div>
             {/* Green "Excellent" logo in the center */}
@@ -68,11 +68,11 @@ export default function Card({ skip, isSelected, onSelect }) {
         <div className="card-body">
           <div className="card-actions justify-between">
        
-      <div className="badge badge-outline">{skip.hire_period_days} days</div>
-      <div className="badge badge-outline">£{skip.price_before_vat}</div>
+      <div className="badge badge-outline text-[#d9d9d9]">{skip.hire_period_days} days</div>
+      <div className="badge badge-outline text-[#d9d9d9]">£{skip.price_before_vat}</div>
   </div><div>
             {skip.allows_heavy_waste&&(
-            <div className="badge badge-error">
+            <div className="badge badge-error font-bold">
               <svg
                 className="size-[1em]"
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,10 +95,10 @@ export default function Card({ skip, isSelected, onSelect }) {
                   ></path>
                 </g>
               </svg>
-             heavy waste isn't allowed
+                 &nbsp;heavy waste isn't allowed
             </div>)}
 {!skip.allowed_on_road && (
-            <div className="badge badge-warning text-white ">
+            <div className="badge badge-warning font-bold ">
               <svg
                 className="size-[1em]"
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ export default function Card({ skip, isSelected, onSelect }) {
                   ></path>
                 </g>
               </svg>
-              Skip not allowed on roads
+             &nbsp; Skip not allowed on roads
             </div>)}
           </div>
         </div>
