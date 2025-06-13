@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="min-h-screen  p-10">
-      <h1 className="text-3xl font-bold mb-6 text-center p-5 text-[#d9d9d9]">Choose Your skip size</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center flex items-center justify-center text-[#d9d9d9]">Choose Your skip size</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-5">
         {loading
           ? Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)
