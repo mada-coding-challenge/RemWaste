@@ -37,18 +37,13 @@ This project is a responsive React-based frontend that allows users to select a 
 ## 📦 Project Structure
  
 src/
+
 ├── App.jsx # Main application component
-
 ├── components/
-
 │ ├── Card.jsx # Displays skip card info
-
 │ ├── SkeletonCard.jsx # Loading skeleton for cards
-
 │ ├── BottomNavbar.jsx # Bottom nav bar with back/next
-
 │ └── Button.jsx # Animated circular button
-
 ├── index.css # Tailwind + DaisyUI + background styling
  
 ---
